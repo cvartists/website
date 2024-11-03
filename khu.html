@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karl Huml - CV Artists Limited</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with logo and navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="nwcv.png" alt="Logo"></a>
+            </div>
+            <nav class="navbar">
+                <ul id="nav-links">
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    &#9776;
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Biography Section -->
+        <section class="biography-section">
+            <h2>Karl Huml</h2>
+            <div class="biography-content">
+			<img src="khu2.jpg" alt="Karl Huml" class="biography-image">
+                <p>Australian Bass Karl Huml resides in Vienna where he was contracted for many years to the Wiener Volksoper.</p>
+                <br>In Vienna, he sang the roles of Bartolo, Il Commendatore, Sparafucile (Rigoletto), Sarastro, Colline, and Quince in A Midsummer Night’s Dream. Previously, at the Bremen Theater, he sang Ramfis (Aida), Sarastro, Colline, Don Basilio (Il barbiere di Siviglia), Colatinus (The Rape of Lucretia), Ferrando (Il trovatore), Frère Laurent (Roméo et Juliette), Timur, Snug/Theseus (A Midsummer Night’s Dream), Hermit (Der Freischütz), Tod (Kaiser von Atlantis, repeated in Biel) and the title role in Don Quichotte.</br>
+                <br>Other engagements include 5th Jew (Salome) in both Hamburg and Brisbane, Il Frate in Essen, Inigo Gomez (L’heure Espagnole) and Zuniga in Vienna; Sparafucile in Perth; and a return to Bremen as Don Quichotte. From 2016 to 2018 he appeared as: The Nose in Vienna and Budapest; Osmin (Die Entführung aus dem Serail) in Rostock; and Alaskawolfjoe (Rise and Fall of the City of Mahagonny).</br>
+                <br>More recently, he sang Tschik in Hagen, Werther and Lady Macbeth of Mtsensk in Klagenfurt; Wagner (Faust), Superintendent Budd (Albert Herring) and Le Héraut (The Love for Three Oranges) at the Maggio Musicale in Florence; Roy Cohn (Angels in America) in Vienna; and Sarastro in Catania. Upcoming engagements include Salome and Lady Macbeth of Mtsensk at the Hamburg State Opera, and Koma at the Salzburg Festival.</br>
+            </div>
+        </section>
+
+        <!-- Downloads Section -->
+        <section class="downloads-section section-clear">
+            <h3>Downloads</h3>
+            <article class="downloads-content">
+                <p><a href="khu-short.pdf">English Biography</a></p>
+            </article>
+        </section>
+
+        <!-- Media Section -->
+        <section class="media-section section-clear">
+            <h3>Media</h3>
+            <article class="media-content">
+                <p><audio controls>
+                    <source src="khu_osmin.mp4" type="audio/mp4">
+                    Your browser does not support the audio element.
+                </audio></p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CV Artists Limited. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for toggling mobile menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

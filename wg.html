@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolfgang Gussmann - CV Artists Limited</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with logo and navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="nwcv.png" alt="Logo"></a>
+            </div>
+            <nav class="navbar">
+                <ul id="nav-links">
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    &#9776;
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Biography Section -->
+        <section class="biography-section">
+            <h2>Wolfgang Gussmann</h2>
+            <div class="biography-content">
+			<img src="wg2.jpg" alt="Wolfgang Gussmann" class="biography-image">
+                <p>Since his breakthrough engagement at the opera house in Darmstadt in 1979, Wolfgang Gussmann has become one of the opera world’s most renowned set designers.</p>
+                <br>Today, there is considerable demand worldwide for revivals and co-productions of works created by Wolfgang Gussmann in conjunction with Willy Decker and Andreas Homoki. Most notably, The Metropolitan Opera New York and the Nederlandse Opera Amsterdam have performed several revivals of the Decker/Gussmann production of La traviata, which has acquired 'cult' status since its original premiere at the Salzburg Festival in 2005.</br>
+                <br><p>His output has been prolific with over 150 productions for opera houses such as: the State Operas of Munich, Hamburg and Dresden; the Deutsche Oper and Komische Oper in Berlin; the Bastille, Palais Garnier and Châtelet theatres in Paris; and the Teatro Regio Torino and La Scala di Milano in Italy. He has also worked in the opera houses of Florence, Venice, Geneva, Lyon, Montpellier, Barcelona, Seville, Oslo, Brussels, Tokyo and San Francisco.</br>
+                <br><p>In 2002 he was awarded the prestigious Order of Chevalier des Arts et des Lettres, honouring his contributions to the cultural life of France.</br>
+            </div>
+        </section>
+
+        <!-- Downloads Section -->
+        <section class="downloads-section section-clear">
+            <h3>Downloads</h3>
+            <article class="downloads-content">
+                <p><a href="wg-short.pdf">English Biography</a></p>
+            </article>
+        </section>
+
+        <!-- Media Section -->
+        <section class="media-section section-clear">
+            <h3>Media</h3>
+            <article class="media-content">
+                <p>No media files available at this time.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CV Artists Limited. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for toggling mobile menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

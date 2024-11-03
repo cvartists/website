@@ -1,0 +1,349 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Logo styles */
+.logo img {
+    padding: 10px 0; /* Adjust padding as needed for vertical alignment */
+    max-height: 60px; /* Adjust max height if needed */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Image Slider Styles */
+.image-slider {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto; /* Centering the slider and adding top margin */
+    padding-top: 40px; /* Add padding to the top of the slideshow */
+}
+
+.slides {
+    position: relative;
+}
+
+.image-container {
+    position: relative; /* Ensure overlay is positioned correctly */
+    display: none; /* Hide all slides initially */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Overlay styles */
+.overlay {
+    position: absolute;
+    bottom: 20px;  /* Position from the bottom */
+    right: 20px;   /* Position from the right */
+    background-color: rgba(7, 7, 7, 0.6); /* Slightly transparent */
+    color: #fff;
+    padding: 10px;  /* Padding for space */
+    font-size: 22px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.latest-news h2 {
+    margin-bottom: 20px;
+}
+
+.news-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+}
+
+.news-item img {
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.news-content h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.news-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #000;
+        border: 1px solid #333;
+        width: 200px;
+        text-align: right;
+        z-index: 10; /* Added z-index to bring it in front */
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* Remove the hover effect for smaller screens */
+    .news-item:hover {
+        transform: none;
+    }
+
+    .news-item {
+        width: calc(50% - 20px);
+    }
+
+    /* Remove margin above the image slider on small screens */
+    header {
+        margin-bottom: 0; /* Ensure no bottom margin for the header */
+    }
+    
+    .image-slider {
+        margin-top: 0; /* Remove top margin for small screens */
+        padding-top: 0; /* Remove any top padding for the image slider */
+    }
+}
+
+@media (max-width: 480px) {
+    .news-item {
+        width: calc(100% - 20px);
+    }
+}
+
+/* About Section */
+.about-section {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-item {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+
+.contact-container, .opening-hours-container, .maps-container {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    margin-top: 20px; /* Space between sections */
+}
+
+.contact-content, .opening-hours-content, .maps-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0; /* Light background for the card effect */
+    width: 80%; /* Control the width for uniformity */
+    max-width: 1090px; /* Max width for larger screens */
+    text-align: left; /* Left-align text within the cards */
+}
+
+/* Artists Section */
+.artists-section {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.artists-section h2 {
+    margin-bottom: 20px;
+}
+
+.artists-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artist-item {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.artist-item:hover {
+    transform: scale(1.05);
+}
+
+.artist-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.artist-content h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.artist-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Biography Section */
+.biography-section {
+    margin-bottom: 30px;
+}
+
+/* Adjusting h2 spacing in the biography section */
+.biography-section h2 {
+    margin-bottom: 20px; /* Adds space between the name and photo */
+    font-size: 26px; /* Slightly larger font for emphasis */
+    color: #333;
+}
+
+.biography-content {
+    overflow: auto;
+    margin-bottom: 30px; /* Space between biography and downloads */
+}
+
+.biography-image {
+    float: left;
+    margin-right: 15px;
+    width: 200px;
+    height: auto;
+}
+
+/* Clear fix for following sections */
+.section-clear {
+    clear: both;
+    padding-top: 20px;
+    margin-top: 20px; /* Additional spacing between sections */
+}
+
+/* Downloads and Media Sections */
+.downloads-section, .media-section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+}
+
+.downloads-content p {
+    margin: 10px 0; /* Space between download links */
+}
+
+/* Media Section */
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments for Artists section */
+@media (max-width: 768px) {
+    .artist-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .artist-item {
+        width: calc(100% - 20px);
+    }
+}

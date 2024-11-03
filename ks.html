@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristinn Sigmundsson - CV Artists Limited</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with logo and navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="nwcv.png" alt="Logo"></a>
+            </div>
+            <nav class="navbar">
+                <ul id="nav-links">
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    &#9776;
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Biography Section -->
+        <section class="biography-section">
+            <h2>Kristinn Sigmundsson</h2>
+			<div class="biography-content">
+            <img src="ks1.jpeg" alt="Kristinn Sigmundsson" class="biography-image">
+                <p>As one of the world’s highly sought basses, Kristinn Sigmundsson regularly sings at the world's greatest opera houses.</p>
+                <br>Some of his career highlights include, but are not limited to: Baron Ochs at the Maggio Musicale Florence; Il Commendatore in Munich, Berlin and New York; Baron Ochs and Vodnik in New York; Gurnemanz in Cologne and Florence; King Heinrich in Madrid; Hunding in Naples, Venice and Cologne; Landgraf in Geneva and Amsterdam; Méphistophélès, King Marke, Sparafucile, Il Commendatore, Sarastro and Baron Ochs in San Francisco; Raimondo (Lucia di Lammermoor) in Munich, as well as Sarastro in Houston and Chile.</br>
+                <br>Some of his past engagements include: Der fliegende Holländer (Daland) at the San Francisco Opera, the Opéra du Rhin Strasbourg and the Ravinia Festival, at which he also sang Don Giovanni (Commendatore) and Nozze di Figaro (Bartolo); Das Rheingold (Fasolt) at the Houston Grand Opera; Philip II in Don Carlo in Iceland (the first time the whole opera was performed there); Louis XIV in The Ghosts of Versailles (Grammy-winning recording of 2017), Basilio in The Barber of Seville and Bartolo in The Marriage of Figaro at the Los Angeles Opera; Il Commendatore with the Budapest Festival Orchestra at the Edinburgh International Festival; Sarastro in Torino; King Mark in Lisbon, as well as Guillaume Tell (Melchtal) and Don Carlos (Le grand Inquisiteur) in Hamburg.</br>
+                <br>More recently he has sung the roles of Daland in Der fliegende Holländer and Commendatore in Don Giovanni at the Houston Grand Opera, Vodnik in Rusalka at the San Francisco Opera as well as The Ghost of Banco in the world premiere of Pascal Dusapin’s Macbeth Underworld at La monnaie in Brussels.</br>
+                <br>In concert, he has worked with many of the world's best known conductors: James Conlon, Jaap van Zweden, Pablo Heras-Casado, James Levine, Riccardo Muti, Sir Colin Davis, Bernard Haitink, Sir Charles Mackerras, Christoph von Dohnányi, Jeffrey Tate, Christoph Eschenbach, Ivor Bolton and Marc Minkowski. He has been featured on a number of recordings, some of which include The Ghosts of Versailles with James Conlon, and Fidelio (Rocco) with the London Symphony Orchestra and Sir Colin Davis.</br>
+            </div>
+        </section>
+
+        <!-- Downloads Section -->
+        <section class="downloads-section section-clear">
+            <h3>Downloads</h3>
+            <article class="downloads-content">
+                <p><a href="ks-short.pdf">English Biography</a></p>
+            </article>
+        </section>
+
+        <!-- Media Section -->
+        <section class="media-section section-clear">
+            <h3>Media</h3>
+            <article class="media-content">
+                <p>No media files available at this time.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CV Artists Limited. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for toggling mobile menu -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
