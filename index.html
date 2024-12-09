@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Artists Limited</title>
+	<meta name="description" content="CV Artists is a classical music agency representing opera singers, conductors, stage directors, and designers on a worldwide basis">
+	<meta name="keywords" content="opera, concerts, artists, agency, classical, music, europe, uk, london">
+	<meta name="author" content="CV Artists Limited">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with logo and navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+            <a href="index.html"><img src="nwcv.png" alt="Logo"></img></a>
+            </div>
+            <nav class="navbar">
+                <ul id="nav-links">
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- Hamburger menu icon -->
+                <div class="hamburger" id="hamburger">
+                    &#9776;
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- New section: Image Slideshow of Opera Houses -->
+    <section class="image-slider">
+        <div class="slides">
+            <div class="image-container">
+                <img src="hotdexp.jpeg" alt="House of the Dead">
+                <div class="overlay">From the House of the Dead</div>
+            </div>
+            <div class="image-container">
+                <img src="nabuexp.jpeg" alt="Nabucco">
+                <div class="overlay">Nabucco</div>
+            </div>
+            <div class="image-container">
+                <img src="cendexp.jpg" alt="Cendrillon">
+                <div class="overlay">Cendrillon</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main content with Latest News -->
+    <main>
+        <section class="latest-news">
+            <h2>Latest News</h2>
+            <div class="news-container">
+                <!-- News item 1 -->
+<article class="news-item">
+    <img src="av2.jpg" alt="La traviata - Glyndebourne">
+    <div class="news-content">
+        <h3>La traviata - Glyndebourne</h3>
+        <p>Alexander Vassiliev performs the role of Doctor Grenvil for ten performances of La traviata at the Glyndebourne Autumn Festival.</p><br>
+        <p>Performances on 10, 13, 15, 18, 20, 23, 26, 28, 31 October, and 2 November 2024.</p><br>
+        <p>
+            Click <a href="https://www.youtube.com/watch?v=_SM_Qbh6zLo">here</a> for the production trailer.<br>
+            Click <a href="https://www.glyndebourne.com/events/la-traviata/">here</a> for more details about the production.</a>
+        </p>
+    </div>
+</article>
+                <!-- News item 2 -->
+                <article class="news-item">
+                    <img src="wg2.jpg" alt="">
+                    <div class="news-content">
+                        <h3>Der fliegende Holländer - Torino</h3>
+        <p>Wolfgang Gussmann's set design and costumes will be revived at the Teatro Regio di Torino.</p><br>
+        <p>Performances on 17, 19, 22, 24 and 26 May 2024.</p><br>
+        <p>
+            Click <a href="https://www.youtube.com/watch?v=D4FLXajDxk4&t=1s">here</a> to view the trailer.<br>
+        </p>
+                </article>
+                <!-- News item 3 -->
+                <article class="news-item">
+                    <img src="av21.jpg" alt="">
+                    <div class="news-content">
+                        <h3>The Tale of Tsar Saltan - Brussels</h3>
+                        <p>Alexander Vassiliev sings the role of Skomorokh/Shipman in Dmitri Tcherniakov's vibrant production.</p><br>
+						<p>Performances on 3, 5, 7, 9, 12, 13, 15, 17 and 19 December 2023.</p><br>
+						<p>Click <a href="https://www.youtube.com/watch?v=B8t219VIgZY">here</a> for a trailer of the production.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CV Artists Limited. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for toggling mobile menu and image slideshow -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+
+        // JavaScript for image slider
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slides .image-container');
+        const totalSlides = slides.length;
+
+        function showSlides() {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === slideIndex) ? 'block' : 'none';
+            });
+            slideIndex = (slideIndex + 1) % totalSlides;
+        }
+
+        // Initialize slideshow
+        showSlides();
+        setInterval(showSlides, 5000); // Change image every 5 seconds
+    </script>
+</body>
+</html>
