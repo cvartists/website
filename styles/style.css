@@ -4,8 +4,7 @@ body {
 	line-height: 1.5em;
 	font-size: 1.1em;
 	background-color: #EAE8FF;
-	color: #000000;
-	padding:0 10px;
+	padding: 0 10px;
 	font-family: Times New Roman;
 	hyphens: auto
 }
@@ -21,7 +20,7 @@ body {
 	text-decoration: none
 }
 	a:hover {
-	color: #FFAA33
+	color: #FF7B29;
 }
 	h1 {color: #000000;
 }
