@@ -16,16 +16,16 @@ body {
 	font-variant: small-caps
 }
 	a {
-	color: #000000;
+	color: #000080;
 	text-decoration: none
 }
 	a:hover {
 	color: #FF7B29;
 }
-	h1 {color: #000000;
+	h1 {color: #000080;
 }
 	h2,h3,h4,h5 {
-	color: #000000;
+	color: #000080;
 }
 	img {
     	padding-right: 30px;
