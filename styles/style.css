@@ -6,7 +6,8 @@ body {
 	background-color: #FFFFFF;
 	padding: 0 10px;
 	font-family: Times New Roman;
-	hyphens: auto
+	color: #000080;
+	hyphens: auto;
 }
 	header {
 	display: flex;
