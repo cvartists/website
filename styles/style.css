@@ -3,10 +3,10 @@ body {
 	max-width: 750px;
 	line-height: 1.5em;
 	font-size: 1.1em;
-	background-color: #FFFFFF;
 	padding: 0 10px;
-	font-family: Times New Roman;
-	color: #000080;
+	font-family: 'Montserrat', sans-serif;
+  	color: #1e1e1e;
+  	background-color: #ffffff;
 	hyphens: auto;
 }
 	header {
@@ -16,11 +16,11 @@ body {
 	white-space: nowrap;
 	font-variant: small-caps
 }
-	.montserrat-<uniquifier> {
-  	font-family: "Montserrat", sans-serif;
-  	font-optical-sizing: auto;
-  	font-weight: 800;
-  	font-style: normal;
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 	a {
 	color: #000080;
@@ -40,5 +40,6 @@ body {
 }
 
 }
+
 
 
